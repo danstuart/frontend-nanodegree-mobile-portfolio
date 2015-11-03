@@ -23,4 +23,4 @@ Resources:
 
 1. [Why Moving Elements With Translate() Is Better Than Pos:abs Top/left](http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
 
-2.[PageSpeed Tools](https://developers.google.com/speed/pagespeed/)
+2. [PageSpeed Tools](https://developers.google.com/speed/pagespeed/)
