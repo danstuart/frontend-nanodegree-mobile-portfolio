@@ -20,6 +20,7 @@ items[i].style.transform = 'translateX(' + (100*phase) + 'px)';
 var number=document.body.scrollTop / 1250;
 
 Resources:
+
 1. [Why Moving Elements With Translate() Is Better Than Pos:abs Top/left](http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
 
 2.[PageSpeed Tools](https://developers.google.com/speed/pagespeed/)
