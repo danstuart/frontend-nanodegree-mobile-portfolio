@@ -1,24 +1,29 @@
-##
-Web Performance Optimization portfolio project
+## Web Performance Optimization portfolio project
+####Super complex! instructions to run the application
+- Download zip file or clone in desktop
+- Then open index.html in a web browser
 
-#### Part 1: Optimize PageSpeed Insights score
-for index.html
-I optimized index.html by:
-1. Minify CSS, HTML and JavaScript
-2. Eliminate render-blocking JS and CSS in above-the-fold content
-3. Optimize images by replacing them with optimized versions
-4. Leverage browser caching using max-age attributes
-5. Using "async" for non-render blocking js
-6. inlining CSS
 
-#### Part 2: Optimize Frames per Second in pizza.html
-Ensuring a consistent frame rate of 60 fps
-1. reducing the number of pizzas created to 20(line 530)
-2. usng translate instead of basic left positioing(line 510):
-    items[i].style.transform = 'translateX(' + (100 * phase) + 'px)';
-3. moving the calculation of a big number ouside the loop(line 506):
-    var number = document.body.scrollTop / 1250;
+####Part 1: Optimize the PageSpeed Insights score for file index.html
 
-Resources:
-1.[Why Moving Elements With Translate() Is Better Than Pos: abs Top / left](http: //www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
-2.[PageSpeed Tools](https: //developers.google.com/speed/pagespeed/)
+Optimizations:
+- a) Added media print to print.css file
+- b) added async to analytics.js file
+- c) Updating images: created a thumbnail for pizzeria.jpg, update img src url for pizzeria.jpg, reduced img profile picture
+- d) Moved google fonts to the top of the head node
+- e) inlined javascript google font
+- f) inlined relevant style.css
+- g) left style.css file untouched, but added media=handset for the smaller portrait @media style
+
+
+####Part 2: Optimized Frames per Second in pizza.html file
+
+####To optimize views/pizza.html, modify views/js/main.js until  frames per second rate is 60 fps or higher. See comments in main.js.
+
+- a) Changed paint pizzas from 200 to 35 (4 rows of 8 cols)
+- b) moved the dx function call outside of the for loop. It needs to be run only once; the value only changed when the slider is moved.
+- c) added meta content to pizza.html file
+- d) compressed pizza.jpg image
+- e) set document.queryselectorAll to 100
+- f) resized pizzaria.jpg pic
+- g) Inlined minified style.css into pizza.html file
