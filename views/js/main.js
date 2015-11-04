@@ -438,8 +438,8 @@ document.addEventListener('DOMContentLoaded', function() {
     elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
-   /* elem.style.height = "100px";  moved it to style.css line: 35 */
-   /* elem.style.width = "73.333px"; moved it to style.css: line: 36 */
+    elem.style.height = "100px";
+    elem.style.width = "73.333px";
     elem.basicLeft = (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     myfragment.appendChild(elem);
